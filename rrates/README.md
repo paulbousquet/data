@@ -1,3 +1,5 @@
+Last updated 3/5/24
+
 irates.csv contains (all data from FRED)
 * dff -- effective funds rate
 * dtb -- 3 month treasury yield
