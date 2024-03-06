@@ -8,5 +8,5 @@ irates.csv contains (all data from FRED)
 Some notes on methodology 
 * For a given month m, dff(m), dtb(m) are the rates on the last day of month m-1
 * CCrate calculated from quarterly data using linear interpolation
-* ffr and rcd are calculated with inflation expectations form UMich survey
+* ffr and rcd are calculated with inflation expectations form UMich survey. For description, see previous page 
   * hopefully at some point I will have code that calculates this automatically (and transparently) as data updates occurr. In the meantime, code available upon request 
