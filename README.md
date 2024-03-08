@@ -1,5 +1,5 @@
 # MP Surprise 
-* tv.ipynb aggregates US (daily trading volume data)[https://www.cboe.com/us/equities/market_statistics/historical_market_volume/] 
+* tv.ipynb aggregates US [daily trading volume data](https://www.cboe.com/us/equities/market_statistics/historical_market_volume/) 
 
 # Real Rates
 * umich.csv shows the percent adjustment to the inflation rate based on the month over month percent change in annualized inflation expectations. When applied to a usuaul inflation rate (I use CPI) this creates a proxy for inflation expectatations.
