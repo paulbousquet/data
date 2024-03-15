@@ -12,3 +12,7 @@ Some notes on methodology
 * CCrate calculated from quarterly data using linear interpolation
 * ffr and rcd are calculated with inflation expectations form UMich survey. For description, see previous page 
   * hopefully at some point I will have code that calculates this automatically (and transparently) as data updates occurr. In the meantime, code available upon request 
+
+One additional note on umich.csv (most details on last page)
+* the median is typically better than the mean for UMich, with a notable exception being post 9/11
+* For now, have imputed post 9/11 months with mean. Want to think of a less ad hoc way to account for it 
