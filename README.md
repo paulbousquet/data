@@ -1,7 +1,8 @@
 # MP Surprise 
 * mpsur.csv is a collection of as many monetary policy surprise measures as I can get my hands on 
 * tv.ipynb aggregates US [daily trading volume data](https://www.cboe.com/us/equities/market_statistics/historical_market_volume/)
-* mpreg.do creates predicted values and residuals for trading volume on FOMC days 
+* mpreg.do creates predicted values and residuals for trading volume on FOMC days
+* See also a [separate repo](https://github.com/paulbousquet/ADMonShock) for Aruoba and Drechsel (2024)
 
 # Real Rates
 * umich.csv shows the percent adjustment to the inflation rate based on the month over month percent change in annualized inflation expectations. When applied to a usuaul inflation rate (I use CPI) this creates a proxy for inflation expectatations.
