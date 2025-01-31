@@ -11,6 +11,4 @@ mpsh.csv is a collection of the following established monetary policy shocks. Th
 * from [Jarociński and Karadi (2020)](https://www.aeaweb.org/articles?id=10.1257/mac.20180090)
 * u1-u4 is the Fed's "unconventional policy shocks" from [Jarociński (2024)](https://www.sciencedirect.com/science/article/pii/S0304393224000011?via%3Dihub)
 * uni is from [Bu, Rogers, and Wu (2021)](https://www.federalreserve.gov/econres/feds/a-unified-measure-of-fed-monetary-policy-shocks.htm) "A Unified Measure of Fed Monetary Policy Shocks"
-* ff1
- * 8/7/2007: +.005. 8/17/2007: -.005
-* Helpful excel formula for matching shocks to full calendar `=IFERROR(INDEX(E:E, MATCH(A2, D:D, 0)), 0)`
+* Helpful excel formula for matching shocks to full calendar `=SUMIFS(B:B, A:A, ">=" & E2, A:A, "<" & EOMONTH(E2, 0) + 1)`
