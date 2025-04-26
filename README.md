@@ -3,6 +3,7 @@
 * tv.ipynb aggregates US [daily trading volume data](https://www.cboe.com/us/equities/market_statistics/historical_market_volume/)
 * mpreg.do creates predicted values and residuals for trading volume on FOMC days
 * See also a [separate repo](https://github.com/paulbousquet/ADMonShock) for Aruoba and Drechsel (2024)
+* [GSS (2005) WP version](https://www.federalreserve.gov/pubs/feds/2004/200466/200466pap.pdf) has shocks in table form by window length
 
 # Real Rates
 * umich.csv shows the percent adjustment to the inflation rate based on the month over month percent change in annualized inflation expectations. When applied to a usuaul inflation rate (I use CPI) this creates a proxy for inflation expectatations.
