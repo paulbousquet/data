@@ -1,9 +1,10 @@
 # MP Surprise 
-* mpsur.csv is a collection of as many monetary policy surprise measures as I can get my hands on 
-* tv.ipynb aggregates US [daily trading volume data](https://www.cboe.com/us/equities/market_statistics/historical_market_volume/)
-* mpreg.do creates predicted values and residuals for trading volume on FOMC days
-* See also a [separate repo](https://github.com/paulbousquet/ADMonShock) for Aruoba and Drechsel (2024)
+* `mp1.csv` is the main file. Originally I was working on something more comprehensive (see Johnathan Adams' [master file](https://github.com/jonathanjadams/structuralshocks))
+* See also a [separate repo](https://github.com/paulbousquet/ADMonShock) for Miranda-Agrippino and Ricco (2021) and Aruoba and Drechsel (2025)
 * [GSS (2005) WP version](https://www.federalreserve.gov/pubs/feds/2004/200466/200466pap.pdf) has shocks in table form by window length
+* I also have a [repo](https://github.com/paulbousquet/SEPData) for pulling FOMC projection data which could be used to create a quarterly counterpart to Romer and Romer 
+* `tv.ipynb` aggregates US [daily trading volume data](https://www.cboe.com/us/equities/market_statistics/historical_market_volume/)
+* `mpreg.do` creates predicted values and residuals for trading volume on FOMC days
 
 # Real Rates
 * umich.csv shows the percent adjustment to the inflation rate based on the month over month percent change in annualized inflation expectations. When applied to a usuaul inflation rate (I use CPI) this creates a proxy for inflation expectatations.
