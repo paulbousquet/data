@@ -1,12 +1,13 @@
-*! version 1.0.0  efflag.ado
-*! efflag varname, lag(k)
+*! version 1.0.1  efflag.ado
+*! efflag varname [, lag(k)]
 *!   For a tsset (or xtset) dataset, generates varname_1, varname_2, ...,
 *!   varname_k where varname_i at time t is the i-th most recent non-missing
-*!   value of varname at times <= t (within panel, if panel is set).
+*!   value of varname at times STRICTLY BEFORE t (within panel, if set).
+*!   Default lag is 12.
 
 program define efflag
     version 14
-    syntax varname(numeric) , Lag(integer)
+    syntax varname(numeric) [, Lag(integer 12)]
 
     // Require tsset/xtset
     capture quietly tsset
@@ -51,7 +52,7 @@ program define efflag
     // For each i, look up the value at (rnk - i + 1).
     forvalues i = 1/`lag' {
         tempvar lkup
-        quietly generate long `lkup' = `rnk' - `i' + 1
+        quietly generate long `lkup' = `rnk' - `i' + missing(`var')
 
         preserve
             quietly keep if !missing(`var')
